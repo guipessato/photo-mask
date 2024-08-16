@@ -1,0 +1,42 @@
+// Mixin para aplicar estilos quando a tela for maior que 1023px
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content; // Inclui o conteúdo passado quando a largura da tela é maior que 1023px
+    }
+}
+
+// Mixin para aplicar estilos quando a tela for menor ou igual a 1023px
+@mixin mobile {
+    @media (max-width: 1023px) {
+        @content; // Inclui o conteúdo passado quando a largura da tela é 1023px ou menos
+    }
+}
+
+// Mixin para estilizar um container com largura máxima de 1180px, padding e centralização
+@mixin container() {
+    width: 100%;
+    max-width: 1180px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+// Mixin para estilizar títulos com tamanho de fonte, cor e alinhamento configuráveis
+@mixin title($color: $pink) {
+    font-size: 32px;
+    line-height: 100%;
+    font-weight: bold;
+    text-align: left;
+    color: $color; // Cor do texto configurável, padrão é preto ($black)
+}
+
+// Mixin para estilizar texto com tamanho de fonte, cor, alinhamento e margem configuráveis
+@mixin text($color: $gray-dark) {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: normal;
+    text-align: left;
+    color: $color; // Cor do texto configurável, padrão é cinza escuro ($gray-dark)
+    margin: 12px 0 32px; // Margem superior 12px, inferior 32px, sem margem lateral
+}

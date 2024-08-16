@@ -1,0 +1,15 @@
+// Importação de arquivos base
+@import '../base/base';
+@import '../base/reset';
+@import '../base/typography';
+
+// Importação de mixins
+@import '../mixins/mixins';
+
+// Importação de variáveis
+@import '../variables/variables';
+
+// Importação de componentes específicos
+@import '../components/footer/footer';
+@import '../components/header/header';
+@import '../components/imagens-mask/imagens-mask'

@@ -1,0 +1,16 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+.footer {
+    display: none !important;
+    background-color: $primary-color;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+
+    &__text {
+        font-size: 14px;
+        text-align: left;
+        color: $gray-dark;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Mask</title>
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist\css\style.min.css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jQuery Mask Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <h1 class="header__title">Photo Mask</h1>
+      </div>
+    </header>
+    <main class="main container">
+      <div class="container-imagem">
+        <div class="imagem">
+          <div class="form">
+            <div class="input">
+              <label for="profileImageUpload">Selecionar foto</label>
+              <input
+                type="file"
+                class="button"
+                id="profileImageUpload"
+                accept="image/*"
+              />
+            </div>
+
+            <div class="input">
+              <label for="overlayImageUpload">Selecionar o filtro</label>
+              <input
+                type="file"
+                class="button"
+                id="overlayImageUpload"
+                accept="image/*"
+              />
+            </div>
+            <div id="download-link" style="display: none">
+              <a id="download" href="#" download="combined-image.png"
+                >Baixar Imagem Combinada</a
+              >
+            </div>
+          </div>
+          <canvas id="combinedCanvas"></canvas>
+        </div>
+      </div>
+
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <small class="footer__text">Guilherme José Pessato</small>
+      </div>
+    </footer>
+
+    <!-- javascript -->
+    <script src="dist\js\scripts.min.js"></script>
+  </body>
+</html>
